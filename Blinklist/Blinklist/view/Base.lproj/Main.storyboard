@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="94g-E8-xZl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Explore-->
+        <scene sceneID="C9S-BD-mwI">
+            <objects>
+                <viewController id="FTf-dz-pA7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7oM-y8-fpm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="18h-N2-oeP"/>
+                        <color key="backgroundColor" red="0.047021806239999998" green="0.1326444447" blue="0.17850074169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Explore" image="magnifyingglass" catalog="system" id="ogi-8x-WSH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zlr-Zb-Vn5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="171"/>
+        </scene>
+        <!--Library-->
+        <scene sceneID="qcb-cF-Tzb">
+            <objects>
+                <viewController id="rk3-bX-dVm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YCu-lJ-H9k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SGD-c2-IvC"/>
+                        <color key="backgroundColor" red="0.047021806239999998" green="0.1326444447" blue="0.17850074169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Library" image="bookmark" catalog="system" id="cEW-rz-W9E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbm-vs-bEn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2254" y="171"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="n2l-OB-L6u">
+            <objects>
+                <viewController id="JGn-2Z-l2Z" userLabel="HomeViewController" customClass="HomeViewController" customModule="Blinklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FK5-74-agY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mNS-dg-c3s">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.047021806239999998" green="0.1326444447" blue="0.17850074169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="O4O-7V-S40">
+                                    <size key="itemSize" width="360" height="370"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="WkW-gr-UKv" customClass="OutletCollectionViewCell" customModule="Blinklist" customModuleProvider="target">
+                                        <rect key="frame" x="27" y="0.0" width="360" height="370"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CNe-dK-Vdp">
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="370"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V8e-X9-U71">
+                                                    <rect key="frame" x="15" y="15" width="330" height="258"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="258" id="rN5-Ch-DCC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hef-21-nTJ">
+                                                    <rect key="frame" x="15" y="281" width="262" height="24"/>
+                                                    <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="18"/>
+                                                    <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ld-Bc-Tz6">
+                                                    <rect key="frame" x="15" y="309" width="330" height="20"/>
+                                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WT-4W-rpz">
+                                                    <rect key="frame" x="15" y="336.5" width="62" height="15"/>
+                                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSd-Wt-6Gl">
+                                                    <rect key="frame" x="308" y="283" width="37" height="20"/>
+                                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                                    <color key="textColor" systemColor="systemGreenColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMS-Ga-D7e">
+                                                    <rect key="frame" x="77" y="333.5" width="48" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="imU-NC-O9M"/>
+                                                        <constraint firstAttribute="height" constant="21" id="wju-gv-YQL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="MSd-Wt-6Gl" secondAttribute="trailing" constant="15" id="1Sk-RP-O5C"/>
+                                                <constraint firstItem="4ld-Bc-Tz6" firstAttribute="top" secondItem="hef-21-nTJ" secondAttribute="bottom" constant="4" id="3rq-Cq-Yia"/>
+                                                <constraint firstItem="lMS-Ga-D7e" firstAttribute="top" secondItem="4ld-Bc-Tz6" secondAttribute="bottom" constant="4.5" id="9kt-Q3-oSh"/>
+                                                <constraint firstItem="MSd-Wt-6Gl" firstAttribute="top" secondItem="V8e-X9-U71" secondAttribute="bottom" constant="10" id="B32-g9-lhA"/>
+                                                <constraint firstItem="lMS-Ga-D7e" firstAttribute="leading" secondItem="2WT-4W-rpz" secondAttribute="trailing" id="EYF-Xu-Wjd"/>
+                                                <constraint firstItem="lMS-Ga-D7e" firstAttribute="leading" secondItem="CNe-dK-Vdp" secondAttribute="leading" constant="77" id="GEp-Kx-K1x"/>
+                                                <constraint firstItem="4ld-Bc-Tz6" firstAttribute="leading" secondItem="CNe-dK-Vdp" secondAttribute="leading" constant="15" id="J9R-cw-T0a"/>
+                                                <constraint firstItem="lMS-Ga-D7e" firstAttribute="centerY" secondItem="2WT-4W-rpz" secondAttribute="centerY" id="P4C-SX-Bm1"/>
+                                                <constraint firstItem="V8e-X9-U71" firstAttribute="leading" secondItem="CNe-dK-Vdp" secondAttribute="leading" constant="15" id="RPf-ru-f3f"/>
+                                                <constraint firstAttribute="trailing" secondItem="V8e-X9-U71" secondAttribute="trailing" constant="15" id="SGx-eD-Bto"/>
+                                                <constraint firstItem="2WT-4W-rpz" firstAttribute="top" secondItem="4ld-Bc-Tz6" secondAttribute="bottom" constant="7.5" id="dNM-OS-w2S"/>
+                                                <constraint firstItem="V8e-X9-U71" firstAttribute="top" secondItem="CNe-dK-Vdp" secondAttribute="top" constant="15" id="g4D-y1-ARL"/>
+                                                <constraint firstItem="hef-21-nTJ" firstAttribute="top" secondItem="V8e-X9-U71" secondAttribute="bottom" constant="8" id="gTv-gQ-Ser"/>
+                                                <constraint firstItem="lMS-Ga-D7e" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2WT-4W-rpz" secondAttribute="trailing" constant="-9" id="haX-NY-DG6"/>
+                                                <constraint firstItem="hef-21-nTJ" firstAttribute="leading" secondItem="CNe-dK-Vdp" secondAttribute="leading" constant="15" id="ol3-XH-CXU"/>
+                                                <constraint firstItem="hef-21-nTJ" firstAttribute="centerX" secondItem="CNe-dK-Vdp" secondAttribute="centerX" constant="-34" id="ttP-lQ-Rjj"/>
+                                                <constraint firstItem="2WT-4W-rpz" firstAttribute="leading" secondItem="CNe-dK-Vdp" secondAttribute="leading" constant="15" id="ub0-jW-Q8x"/>
+                                                <constraint firstItem="4ld-Bc-Tz6" firstAttribute="centerX" secondItem="CNe-dK-Vdp" secondAttribute="centerX" id="zFO-gJ-Ppf"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="360" height="370"/>
+                                        <connections>
+                                            <outlet property="accessOutlet" destination="MSd-Wt-6Gl" id="D3E-Ui-WXA"/>
+                                            <outlet property="authorOutlet" destination="4ld-Bc-Tz6" id="h2p-7p-cvm"/>
+                                            <outlet property="bookTitleOutlet" destination="hef-21-nTJ" id="sEU-L5-cjf"/>
+                                            <outlet property="bookType" destination="2WT-4W-rpz" id="aKa-KN-sLs"/>
+                                            <outlet property="durationOutlet" destination="lMS-Ga-D7e" id="bnP-Iz-PgJ"/>
+                                            <outlet property="imageOutlet" destination="V8e-X9-U71" id="POG-dx-Ap6"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="JGn-2Z-l2Z" id="IoL-yE-NjT"/>
+                                    <outlet property="delegate" destination="JGn-2Z-l2Z" id="pLH-Q5-bxA"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l2U-eX-iLf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l2U-eX-iLf" firstAttribute="bottom" secondItem="mNS-dg-c3s" secondAttribute="bottom" id="Cqp-yc-jz0"/>
+                            <constraint firstItem="mNS-dg-c3s" firstAttribute="leading" secondItem="l2U-eX-iLf" secondAttribute="leading" id="N44-UF-yra"/>
+                            <constraint firstItem="mNS-dg-c3s" firstAttribute="top" secondItem="l2U-eX-iLf" secondAttribute="top" id="jSz-KU-j5K"/>
+                            <constraint firstItem="l2U-eX-iLf" firstAttribute="trailing" secondItem="mNS-dg-c3s" secondAttribute="trailing" id="q7n-Ia-yiI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="Swj-T9-KZj">
+                        <barButtonItem key="rightBarButtonItem" image="gearshape" catalog="system" style="plain" id="3PC-1D-Sk6">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="P0m-RU-ir4">
+                                <rect key="frame" x="373" y="11" width="21" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <state key="normal" image="gearshape.fill" catalog="system"/>
+                            </button>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="mNS-dg-c3s" id="FDh-Or-HWc"/>
+                        <segue destination="BvD-ta-GFh" kind="show" identifier="segue" id="ucC-jc-L2i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beh-yy-dW6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2969.5652173913045" y="-793.52678571428567"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="C10-qG-XEh">
+            <objects>
+                <viewController id="BvD-ta-GFh" customClass="DetailViewController" customModule="Blinklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VGv-KW-SAB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Vg-c6-UnP">
+                                <rect key="frame" x="90" y="115" width="234" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="segue"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="premium members pay #5,500.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCv-P9-MkY">
+                                <rect key="frame" x="102" y="434" width="210.5" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8OR-1b-Moj">
+                                <rect key="frame" x="30" y="454" width="354" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="segue"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKu-FU-oqe">
+                                <rect key="frame" x="30" y="511" width="354" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="segue"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUg-DD-vP8">
+                                <rect key="frame" x="30" y="528" width="251" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="segue"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryN-sl-f8U">
+                                <rect key="frame" x="30" y="371" width="354" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="19"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="  Buy Audiobook - #10,900.00" image="cart" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Pz-b2-Jh1">
+                                <rect key="frame" x="13" y="577" width="388" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VVz-Py-dUy">
+                                <rect key="frame" x="13" y="617" width="388" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rXs-kP-BPw">
+                                <rect key="frame" x="13" y="660" width="388" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Publisher Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVq-Iy-Dl3">
+                                <rect key="frame" x="30" y="694.5" width="164" height="20"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the spirit of Steve Jobs and Moneyball, Elon Musk is both an illuminating and authorized look at the extraordinary life of" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHL-U1-7GG">
+                                <rect key="frame" x="30" y="734.5" width="354" height="63.5"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Listen to a sample" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsN-Wb-DoE">
+                                <rect key="frame" x="30" y="586" width="215" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLm-CS-hDI">
+                                <rect key="frame" x="364" y="586" width="20" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="play.circle.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gM-Q3-O6f">
+                                <rect key="frame" x="30" y="617" width="20" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="timer" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13h 24min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84F-nl-XCf">
+                                <rect key="frame" x="58" y="628" width="76" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOL-3X-tqK">
+                                <rect key="frame" x="170" y="625" width="24" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="list.bullet.rectangle" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20 chapters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HT5-Am-oL8">
+                                <rect key="frame" x="203" y="629" width="85" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AUM-NC-hnn"/>
+                        <color key="backgroundColor" red="0.047021806239999998" green="0.1326444447" blue="0.17850074169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="segue">
+                            <bool key="isElement" value="NO"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="FHL-U1-7GG" firstAttribute="leading" secondItem="AUM-NC-hnn" secondAttribute="leading" constant="30" id="Pwd-ja-tJP"/>
+                            <constraint firstItem="FHL-U1-7GG" firstAttribute="centerX" secondItem="VGv-KW-SAB" secondAttribute="centerX" id="TWe-g7-FFn"/>
+                            <constraint firstItem="wVq-Iy-Dl3" firstAttribute="leading" secondItem="AUM-NC-hnn" secondAttribute="leading" constant="30" id="V4A-jq-Cv7"/>
+                            <constraint firstItem="AUM-NC-hnn" firstAttribute="trailing" secondItem="FHL-U1-7GG" secondAttribute="trailing" constant="30" id="Y8E-tx-rCA"/>
+                            <constraint firstItem="FHL-U1-7GG" firstAttribute="top" secondItem="wVq-Iy-Dl3" secondAttribute="bottom" constant="20" id="pEW-28-TVb"/>
+                            <constraint firstItem="AUM-NC-hnn" firstAttribute="bottom" secondItem="FHL-U1-7GG" secondAttribute="bottom" constant="15" id="u5u-UE-z0u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cbN-7h-aVX"/>
+                    <connections>
+                        <outlet property="authorLabel" destination="PKu-FU-oqe" id="mcf-eV-Zmd"/>
+                        <outlet property="descriptionLabel" destination="jUg-DD-vP8" id="UII-bT-wW0"/>
+                        <outlet property="imageView" destination="2Vg-c6-UnP" id="HT1-3K-DdE"/>
+                        <outlet property="titleLabel" destination="8OR-1b-Moj" id="ZRl-Aw-0d2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxQ-Zv-sHn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3682.608695652174" y="-800.22321428571422"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2ln-sN-Oae">
+            <objects>
+                <tabBarController id="94g-E8-xZl" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7a5-JP-XkO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.047021806239999998" green="0.1326444447" blue="0.17850074169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.047021806239999998" green="0.1326444447" blue="0.17850074169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" systemColor="systemGreenColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kvh-I0-0WM" kind="relationship" relationship="viewControllers" id="ocg-Ce-2fR"/>
+                        <segue destination="FTf-dz-pA7" kind="relationship" relationship="viewControllers" id="qmN-WT-9MR"/>
+                        <segue destination="rk3-bX-dVm" kind="relationship" relationship="viewControllers" id="RXw-Bk-j9B"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TmN-WX-b8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1172" y="-794"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="QX7-ng-y3c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kvh-I0-0WM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="NDf-Eq-cXe">
+                        <color key="badgeColor" red="0.047021806239999998" green="0.1326444447" blue="0.17850074169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5ei-8b-wXf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.047021806239999998" green="0.1326444447" blue="0.17850074169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JGn-2Z-l2Z" kind="relationship" relationship="rootViewController" id="ja8-2c-g4s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SaL-Hz-Fxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2255" y="-801"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="timer" catalog="system" width="128" height="121"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
